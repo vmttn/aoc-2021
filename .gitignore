@@ -1,1 +1,13 @@
-.venv
+# Python
+*.py[cod]
+__pycache__/
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+
+# Virtualenv
+.venv/
+
+.tox/
+.pytest_cache
