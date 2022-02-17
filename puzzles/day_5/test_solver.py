@@ -1,0 +1,32 @@
+from typing import List
+
+import pytest
+
+from day_5 import solver
+from day_5.solver import Line
+
+
+@pytest.fixture
+def lines() -> List[Line]:
+    return [
+        ((0, 9), (5, 9)),
+        ((8, 0), (0, 8)),
+        ((9, 4), (3, 4)),
+        ((2, 2), (2, 1)),
+        ((7, 0), (7, 4)),
+        ((6, 4), (2, 0)),
+        ((0, 9), (2, 9)),
+        ((3, 4), (1, 4)),
+        ((0, 0), (8, 8)),
+        ((5, 5), (8, 2)),
+    ]
+
+
+def test_part_one(lines: List[Line]):
+    overlap_count = solver.solve_part_one(lines)
+    assert overlap_count == 5
+
+
+def test_part_two(lines: List[Line]):
+    overlap_count = solver.solve_part_two(lines)
+    assert overlap_count == 12
