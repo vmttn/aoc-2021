@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from day_5 import solver
-from day_5.solver import Line
+from day_05 import solver
+from day_05.solver import Line
 
 
 @pytest.fixture

@@ -2,7 +2,7 @@ from typing import List
 
 import pytest
 
-from day_1 import solver
+from day_01 import solver
 
 
 @pytest.fixture

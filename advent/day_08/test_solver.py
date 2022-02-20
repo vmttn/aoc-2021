@@ -3,8 +3,8 @@ from typing import List
 
 import pytest
 
-from day_8 import solver
-from day_8.solver import Entry
+from day_08 import solver
+from day_08.solver import Entry
 
 
 @pytest.fixture
