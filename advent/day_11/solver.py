@@ -39,8 +39,6 @@ def step(octopuses_grid: List[List[int]]) -> int:
                 flash_count += 1
                 octopuses_grid[i][j] = 0
 
-        print(flash_count)
-
     return flash_count
 
 
